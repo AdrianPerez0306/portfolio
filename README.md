@@ -1,2 +1,5 @@
 # static-webpage
-Pagina web estatica responsiva con HTML(5), SCSS(LESS), Javascript 
+Pagina web a modo de portfolio personal.
+
+# Tecnologias
+Vite React Ts
