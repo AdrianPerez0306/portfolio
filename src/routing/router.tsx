@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 // import { paths, PathTestId, pathToLabelMap } from './domain/routes';
 
-import { AboutMe } from '../components/aboutMe';
-import { Projects } from '../components/projects';
-import { Layout } from '../components/layout';
+import { AboutMe } from '../components/aboutMe/aboutMe';
+import { Projects } from '../components/projects/projects';
+import { Layout } from '../components/layout/layout';
 
 export const defaultRoute = '/portfolio'
 export const AppRoutes = (

@@ -1,0 +1,31 @@
+header{
+    height: 10%;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer{
+    height: 10%;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    height: 80%;
+}
+.detail{
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    margin-left: 1rem;
+}
+.shortcuts{
+    display: flex;
+    gap: 1rem;
+    margin-right: 1rem;
+}
