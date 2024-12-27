@@ -1,21 +1,21 @@
 
+import { project } from '../../module';
 import './cardProject.css'
 
-export const CardProject = () => {
+export const CardProject = ({project}:{project:project}) => {
 
     return <>
         <div className="cardProject">
-            <img src="./src/assets/readApp.jpeg" alt="IMG" />
+            <img src={`${project.img}`} alt="IMG" />
             <div className="content">
-                <h5>TITLE</h5>
-                <p className="info">texto mucho</p>
+                <h5>{`${project.title}`}</h5>
+                <p className="info">{`${project.info}`}</p>
             </div>
             <div className="actions">
-                <button>Details</button>
-                <button>Github</button>
-                <button>Hosted</button>
+                <button className='mock'>Details</button>
+                <button className='mock'>Github</button>
+                <button className='mock'>Hosted</button>
             </div>
-            {/* <div className="technologys">UL LI Y DEMAS</div> */}
         </div>
     </>
 };
