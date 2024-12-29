@@ -7,7 +7,12 @@ import './aboutMe.css'
 export const AboutMe = () => {
 
     return <>
-        <span>{aboutMe}</span>
+        <div className="">
+            <h2>Hi</h2>
+            <h2>Im<h2>Adrian</h2></h2>
+            <h3>a Fullstack Developer</h3>
+            <span>{aboutMe}</span>
+        </div>
     </>
 };
 

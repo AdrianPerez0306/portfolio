@@ -44,6 +44,11 @@ footer{
     align-items: baseline;
     gap: 1rem;
     margin-left: 1rem;
+
+    & img{
+        width: 3rem;
+        background: transparent;
+    }
 }
 .shortcuts{
     display: flex;

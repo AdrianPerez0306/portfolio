@@ -44,3 +44,7 @@ html {
   overflow: hidden;
 }
 
+button{
+  cursor: pointer;
+}
+

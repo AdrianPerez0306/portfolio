@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-d
 import { AboutMe } from '../components/aboutMe/aboutMe';
 import { Projects } from '../components/projects/projects';
 import { Layout } from '../components/layout/layout';
+import { ProjectDetail } from '../components/projectDetail/projectDetail';
 
 export const defaultRoute = '/portfolio'
 export const AppRoutes = (
@@ -29,6 +30,7 @@ export const AppRoutes = (
             <Route element={<Layout />}>
                 <Route element={<AboutMe />} path={`${defaultRoute}/main`}/>
                 <Route element={<Projects />} path={`${defaultRoute}/projects`}/>
+                <Route element={<ProjectDetail/>} path={`${defaultRoute}/projects/:id`}/>
             </Route>
             <Route path="*" element={<Navigate to={`${defaultRoute}/main`} replace />} />
         </Routes>

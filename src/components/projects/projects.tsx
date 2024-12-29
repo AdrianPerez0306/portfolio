@@ -1,6 +1,7 @@
 import { CardProject } from "../cardProject/cardProject";
 import './projects.css'
 import { projects } from "../../module";
+
 export const Projects = () => {
 
     const listProjects = projects.map((project)=>

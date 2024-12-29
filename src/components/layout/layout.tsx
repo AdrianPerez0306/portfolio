@@ -7,7 +7,7 @@ export const Layout = () => {
     return <>
         <header>
             <div className="detail">
-                <img src="/asd" alt="IMG" className="logo" />
+                <img src="./src/assets/logo.png" alt="IMG" className="logo" />
                 <h2>TEXT</h2>
             </div>
             <div className="shortcuts">
