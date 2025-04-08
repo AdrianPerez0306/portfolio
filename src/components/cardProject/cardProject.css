@@ -3,10 +3,11 @@
     width: 100%;
     display:grid;
     grid-template-areas: 
-    "image      image       image"
-    "content    content     content"
-    "actions    actions     actions";
-    grid-template-rows: 40% 40% 20%;
+    "image          image           image"
+    "content        content         content"
+    "actions        actions         actions"
+    "technologys    technologys     technologys";
+    grid-template-rows: 40% 30% 20% 10%;
     border-radius: 10px;
 
     background-image: var(--color-aux-gradient);
@@ -47,4 +48,23 @@
         font-size: 1em;
         background-image: var(--color-terciary-gradient);
     }
+}
+
+.cardProject .technologys{
+    grid-area: technologys;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+
+.cardTechnologylabel{
+    padding: 0.3em;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+}
+
+.labelText{
+    font-size: 0.8em; /* Tamaño de fuente más pequeño */
 }

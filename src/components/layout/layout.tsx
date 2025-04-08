@@ -12,10 +12,14 @@ export const Layout = () => {
             </div>
             <div className="shortcuts">
                 <NavLink to={`${defaultRoute}/main`}>
-                    <button>main</button>
+                    <button>About me</button>
                 </NavLink>
                 <NavLink to={`${defaultRoute}/projects`}>
                     <button>projects</button>
+                </NavLink>
+
+                <NavLink to={`${defaultRoute}/projects`}>
+                    <button>Extra</button>
                 </NavLink>
             </div>
 

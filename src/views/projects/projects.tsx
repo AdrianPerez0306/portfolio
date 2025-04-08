@@ -1,11 +1,11 @@
 import { CardProject } from "../../components/cardProject/cardProject";
+import { projects } from "../../utils/projects";
 import './projects.css'
-import { projects } from "../../utils/module";
 
 export const Projects = () => {
 
-    const listProjects = projects.map((project)=>
-        <CardProject project={project}></CardProject>
+    const listProjects = projects.map((project, index)=>
+        <CardProject key={index} project={project}></CardProject>
     )
 
     return <>

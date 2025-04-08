@@ -1,11 +1,12 @@
 import { useNavigate, useParams } from "react-router-dom";
-import { project, projects } from "../../utils/module";
 import { useEffect, useState } from "react";
 import { defaultRoute } from "../routes/router";
+import { projects } from "../../utils/projects";
+import { Project } from "../../model/project";
 
 export const ProjectDetail = () => {
     const routeParameter = useParams()
-    const [project, setProject] = useState<project>()
+    const [project, setProject] = useState<Project>()
     const navigate = useNavigate()
     function getProject():void{
         // Como no hay backend para este portfolio, esto solo lo busca en la lista de <modules.ts>
@@ -18,6 +19,7 @@ export const ProjectDetail = () => {
     function goBack(){
         navigate(`${defaultRoute}/projects`)
     }
+
     useEffect(() => {
         getProject();
     }, []);
@@ -25,9 +27,22 @@ export const ProjectDetail = () => {
     return <>
         <div className="project__detail">
             <h1>{project?.title}</h1>
-            {/* <h1>{project.title}</h1> */}
             <div><h1>{project?.info}</h1></div>
+            {project?.technologys.map((technology, index)=>
+                <div className="technologys">
+                    <div className=""></div>
+                    <div>Nombre: {technology.label}</div>
+                    <div>Version: {technology.version}</div>
+                    <div>Context: {technology.context}</div>
+                    <div>Type: {technology.typeOfTool}</div>
+                    {technology.subTool.map((subTechnology)=>
+                        <span>{subTechnology.label} </span>
+                    )}
+                    
+                </div>
+            )}
             <button onClick={goBack}>BACK</button>
+
         </div>
     </>
 };

@@ -1,4 +1,4 @@
-import { PersistanceTool, ProgrammingLanguage, ProgrammingTool } from "./programmingTools/common"
+import { ProgrammingLanguage, ProgrammingTool } from "./programmingTools/common"
 
 export type Project = {
     id:number,
@@ -6,7 +6,7 @@ export type Project = {
     info:string,
     img:string,
     languages: ProgrammingLanguage[]
-    technologys: (ProgrammingTool | PersistanceTool)[],
+    technologys: ProgrammingTool[],
     type: 'laboral' | 'facultad',
     inProgress: boolean,
     githubRepoLink: string,

@@ -1,7 +1,7 @@
 // import { NavLink, Outlet } from 'react-router-dom';
 // import { Header } from './header';
 
-import { aboutMe } from "../../utils/module";
+import { aboutMe } from '../../utils/aboutMe';
 import './aboutMe.css'
 // import { paths, PathTestId, pathToLabelMap } from './domain/routes';
 export const AboutMe = () => {

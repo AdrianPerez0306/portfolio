@@ -10,8 +10,8 @@ export type ProgrammingLanguage = BaseTechnology & {
 
 export type ProgrammingTool = BaseTechnology & {
     version: string,
-    context: 'backend' | 'frontend',
-    typeOfTool: 'framework' | 'library',
+    context: 'backend' | 'frontend' | 'database',
+    typeOfTool: 'framework' | 'library' | 'RDBMS',
     subTool: BaseTechnology[]
 }
 

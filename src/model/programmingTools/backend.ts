@@ -7,7 +7,7 @@ const springWebREST: BaseTechnology = {
 }
 
 const springDataJPA: BaseTechnology = {
-    label: 'Spring Web REST',
+    label: 'Spring Data JPA',
     color: ''
 }
 
@@ -20,6 +20,26 @@ const springBoot: ProgrammingTool = {
     subTool: [springWebREST, springDataJPA]
 }
 
+const mysql: ProgrammingTool = {
+    label: 'MySQL',
+    color: 'grey',
+    version: '',
+    context: 'database',
+    typeOfTool: 'RDBMS',
+    subTool: [springWebREST, springDataJPA]
+}
+
+const postgresql: ProgrammingTool = {
+    label: 'PostgreSQL',
+    color: 'Blue',
+    version: '',
+    context: 'database',
+    typeOfTool: 'RDBMS',
+    subTool: [springWebREST, springDataJPA]
+}
+
 export const backendTools: { [language: string]: ProgrammingTool } = {
-    springBoot: springBoot
+    springBoot: springBoot,
+    mysql: mysql,
+    postgresql: postgresql
 }
