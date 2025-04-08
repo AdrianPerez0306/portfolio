@@ -1,7 +1,7 @@
 
 import { useNavigate } from 'react-router-dom';
-import { project } from '../../module';
-import { defaultRoute } from '../../routing/router';
+import { project } from '../../utils/module';
+import { defaultRoute } from '../../views/routes/router';
 import './cardProject.css'
 
 export const CardProject = ({project}:{project:project}) => {

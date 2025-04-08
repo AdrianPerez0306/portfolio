@@ -1,6 +1,6 @@
-import { CardProject } from "../cardProject/cardProject";
+import { CardProject } from "../../components/cardProject/cardProject";
 import './projects.css'
-import { projects } from "../../module";
+import { projects } from "../../utils/module";
 
 export const Projects = () => {
 

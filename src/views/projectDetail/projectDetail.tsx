@@ -1,7 +1,7 @@
 import { useNavigate, useParams } from "react-router-dom";
-import { project, projects } from "../../module";
+import { project, projects } from "../../utils/module";
 import { useEffect, useState } from "react";
-import { defaultRoute } from "../../routing/router";
+import { defaultRoute } from "../routes/router";
 
 export const ProjectDetail = () => {
     const routeParameter = useParams()

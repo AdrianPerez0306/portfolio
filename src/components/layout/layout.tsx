@@ -1,5 +1,5 @@
 import { NavLink, Outlet } from "react-router-dom";
-import { defaultRoute } from "../../routing/router";
+import { defaultRoute } from "../../views/routes/router";
 import './layout.css'
 
 export const Layout = () => {
@@ -8,7 +8,7 @@ export const Layout = () => {
         <header>
             <div className="detail">
                 <img src="./src/assets/logo.png" alt="IMG" className="logo" />
-                <h2>TEXT</h2>
+                <h2>Portfolio</h2>
             </div>
             <div className="shortcuts">
                 <NavLink to={`${defaultRoute}/main`}>
