@@ -6,10 +6,17 @@
   /* //////////////////////////////////////////////////// */
   /* COLORS
   /* //////////////////////////////////////////////////// */
-  --color-primary:    #222831;
+  /* OLD PALLETTE */
+  /* --color-primary:    #222831;
   --color-secondary:  #393E46;
   --color-terciary:   #00ADB5;
-  --color-aux:        #EEEEEE;
+  --color-aux:        #EEEEEE; */
+
+  /* TWITTER FOUND PALLETER */
+  --color-primary:    #317039;
+  --color-secondary:  #FFF1D4;
+  --color-terciary:   #F1BE49;
+  --color-aux:        #CC4B24;
 
   --color-primary-gradient:   linear-gradient(162deg, var(--color-primary) 0%, var(--color-secondary) 100%);
   --color-secondary-gradient: linear-gradient(162deg, var(--color-secondary) 0%, var(--color-terciary) 100%);

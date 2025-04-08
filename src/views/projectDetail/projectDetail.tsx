@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { defaultRoute } from "../routes/router";
 import { projects } from "../../utils/projects";
 import { Project } from "../../model/project";
+import './projectDetail.css'
 
 export const ProjectDetail = () => {
     const routeParameter = useParams()
@@ -27,10 +28,9 @@ export const ProjectDetail = () => {
     return <>
         <div className="project__detail">
             <h1>{project?.title}</h1>
-            <div><h1>{project?.info}</h1></div>
+            <h3>{project?.info}</h3>
             {project?.technologys.map((technology, index)=>
                 <div className="technologys">
-                    <div className=""></div>
                     <div>Nombre: {technology.label}</div>
                     <div>Version: {technology.version}</div>
                     <div>Context: {technology.context}</div>

@@ -4,7 +4,8 @@ header{
     gap: 1rem;
     align-items: center;
     justify-content: space-between;
-    background-image: var(--color-primary-gradient);
+    background-color: var(--color-primary);
+    /* background-image: var(--color-primary-gradient); */
     & button{
         border-radius: 8px;
         border: 1px solid transparent;
@@ -12,7 +13,7 @@ header{
         font-size: 1em;
         font-weight: 500;
         font-family: inherit;
-        background-image: var(--color-secondary-gradient);
+        background-color: var(--color-terciary);
         transition: 0.25s;
         cursor: pointer;
         &:hover{
@@ -30,7 +31,7 @@ footer{
     gap: 1rem;
     justify-content: space-around;
     align-items: center;
-    background-image: var(--color-primary-gradient);
+    background-color: var(--color-primary);
 }
 
 .content{
