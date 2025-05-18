@@ -10,7 +10,7 @@ export const ProjectDetail = () => {
     const [project, setProject] = useState<Project>()
     const navigate = useNavigate()
     function getProject():void{
-        // Como no hay backend para este portfolio, esto solo lo busca en la lista de <modules.ts>
+
         const projectAux = projects.find(project=>
             project.id == Number(routeParameter.id)
         )
