@@ -1,4 +1,4 @@
-import { ProgrammingLanguage } from "./common"
+import { ProgrammingLanguage } from "../common"
 
 export const programmingLanguages: { [language: string]: ProgrammingLanguage } = {
     java: {

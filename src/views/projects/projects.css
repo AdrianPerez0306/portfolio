@@ -6,6 +6,7 @@
     /* grid-template-columns: repeat(auto-fill, minmax(clamp(15rem, 50%, 17rem)), 0.7fr); */
     grid-auto-rows: clamp(15rem, 50%, 17rem);
     row-gap: 2rem;
+    padding: 1rem;
     column-gap: 1rem;
     justify-content: center;
 }

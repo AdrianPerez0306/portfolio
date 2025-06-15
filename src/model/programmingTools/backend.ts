@@ -1,4 +1,4 @@
-import { BaseTechnology, ProgrammingTool } from "./common";
+import { BaseTechnology, ProgrammingTool } from "../common";
 
 
 const springWebREST: BaseTechnology = {
@@ -13,7 +13,7 @@ const springDataJPA: BaseTechnology = {
 
 const springBoot: ProgrammingTool = {
     label: 'Spring Boot',
-    color: 'Green',
+    color: '#5e8d5a',
     version: '3.4.4',
     context: 'backend',
     typeOfTool: 'framework',
@@ -22,7 +22,7 @@ const springBoot: ProgrammingTool = {
 
 const mysql: ProgrammingTool = {
     label: 'MySQL',
-    color: 'grey',
+    color: '#00758f',
     version: '',
     context: 'database',
     typeOfTool: 'RDBMS',
@@ -31,7 +31,7 @@ const mysql: ProgrammingTool = {
 
 const postgresql: ProgrammingTool = {
     label: 'PostgreSQL',
-    color: 'Blue',
+    color: '#336791',
     version: '',
     context: 'database',
     typeOfTool: 'RDBMS',

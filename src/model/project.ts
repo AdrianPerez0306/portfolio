@@ -1,4 +1,4 @@
-import { ProgrammingLanguage, ProgrammingTool } from "./programmingTools/common"
+import { ProgrammingLanguage, ProgrammingTool } from "./common"
 
 export type Project = {
     id:number,

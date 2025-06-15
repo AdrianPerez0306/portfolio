@@ -1,4 +1,4 @@
-import { BaseTechnology, ProgrammingTool } from "./common"
+import { BaseTechnology, ProgrammingTool } from "../common"
 
 
 const pandas:BaseTechnology = {
@@ -28,7 +28,7 @@ const axiosAPI:BaseTechnology = {
 
 const react:ProgrammingTool = {
     label: 'React Ts',
-        color: 'Blue',
+        color: '#3178C6',
         version: '18',
         context: 'frontend',
         typeOfTool: 'library',
@@ -46,7 +46,7 @@ const angular:ProgrammingTool = {
 
 const selenium:ProgrammingTool = {
     label: 'Selenium WebDriver',
-        color: 'Green',
+        color: '#01A71C',
         version: '4',
         context: 'frontend',
         typeOfTool: 'library',

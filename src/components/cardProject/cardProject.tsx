@@ -17,23 +17,24 @@ export const CardProject = ({ project }: { project: Project }) => {
 
     return <>
         <div className="cardProject">
-            <img src={`${project.img}`} alt="IMG" />
-            <div className="content">
-                <h5>{`${project.title}`}</h5>
-                <p className="info">{`${project.info}`}</p>
-            </div>
+            <h1 >
+                {`${project.title}`}
+                {/* <hr /> */}
+            </h1>
+            <hr />
             <div className="technologys">
                 {project.technologys.map((technology, index) =>
                     <div className="cardTechnologylabel" style={{ backgroundColor: technology.color }}>
                         <p className="labelText">{technology.label}</p>
                     </div>
                 )}
+                
             </div >
-
+            <hr />
             <div className="actions">
-                <button className='mock' onClick={goToDetail}>Details</button>
-                <button className='mock' onClick={goToGithubRepo}>Github</button>
-                <button className='mock'>Hosted</button>
+                <button className='action' onClick={goToDetail}>Details</button>
+                <button className='action' onClick={goToGithubRepo}>Github</button>
+                <button className='action'>Hosted</button>
             </div>
 
 
