@@ -29,12 +29,12 @@ export const Layout = () => {
     return <>
         <header>
             <div className="detail">
-                <img src="./src/assets/logo.png" alt="IMG" className="logo" />
-                <h2 className="mock">Portfolio</h2>
+                <img src="./src/assets/logo.png" alt="IMG" className="detail__logo" />
+                <h2 className="detail__title">Portfolio</h2>
             </div>
             <div className="shortcuts">
     
-                <NavLink to={`${defaultRoute}/main`}>
+                <NavLink to={`${defaultRoute}/main`} >
                     <button className="selected">About me</button>
                 </NavLink>
 
@@ -54,7 +54,7 @@ export const Layout = () => {
         <footer>
             {
                 ["Github", "Linkedin", "Curriculum"].map((name, index)=>(
-                    <span >{name}</span>
+                    <span key={index} >{name}</span>
                 ))
             }
         </footer>
